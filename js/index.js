@@ -70,7 +70,9 @@ function showNotification(message, isError) {
   let orderAlert = $("#order-alert");
   orderAlert.removeClass("alert-success alert-danger");
   orderAlert.addClass(isError ? "alert-danger" : "alert-success");
-  orderAlert.find(".alert-heading").text(isError ? "Error!" : "Great!");
+  orderAlert
+    .find(".alert-heading")
+    .text(isError ? "Error!" : "Great! Order Created");
   orderAlert.find("p").text(message);
   orderAlert.show();
   setTimeout(() => orderAlert.hide(), 5000);

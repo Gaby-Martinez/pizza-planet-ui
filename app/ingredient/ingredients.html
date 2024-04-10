@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -20,34 +23,7 @@
   <body>
     <!-- HEADER -->
 
-    <header class="header-section container-fluid">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
-          <img src="/images/image4.png" width="50" height="50" class="d-inline-block align-top" alt="" />
-          L'ultima Cena
-        </a>
-        <ul class="navbar-nav mr-auto"></ul>
-        <ul class="navbar-nav">
-          <!-- LINKS -->
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Build Your Pizza!</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/order/orders.html">Orders</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/ingredient/ingredients.html">Ingredients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/beverage/beverages.html">Beverages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/size/sizes.html">Sizes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- TABLE -->
 
@@ -55,7 +31,10 @@
       <div class="jumbotron">
         <div id="ingredient-list">
           <h2 class="text-center">Ingredients</h2>
-          <table id="ingredients" class="table bg-white table-bordered table-hover">
+          <table
+            id="ingredients"
+            class="table bg-white table-bordered table-hover"
+          >
             <thead class="thead-dark">
               <tr class="d-flex">
                 <th class="col-2 text-center">ID</th>
@@ -69,7 +48,9 @@
         </div>
 
         <div class="text-center">
-          <a class="btn btn-warning btn-lg add-ingredient" href="/app/ingredient/add-ingredient.html"
+          <a
+            class="btn btn-warning btn-lg add-ingredient"
+            href="/app/ingredient/add-ingredient.html"
             >Add New Ingredient</a
           >
         </div>
@@ -117,5 +98,6 @@
     ></script>
 
     <script src="/js/ingredient/ingredient.js"></script>
+    <script src="/js/templates/header.js"></script>
   </body>
 </html>

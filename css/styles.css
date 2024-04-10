@@ -22,6 +22,16 @@
   display: none;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   width: 33.33%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand span {
+  margin-left: 10px;
 }
