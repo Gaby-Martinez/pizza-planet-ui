@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,32 +22,7 @@
 
   <body>
     <!-- HEADER -->
-
-    <header class="header-section container-fluid">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
-          <img src="/images/image4.png" width="50" height="50" class="d-inline-block align-top" alt="" />
-          L'ultima Cena
-        </a>
-        <ul class="navbar-nav mr-auto"></ul>
-        <ul class="navbar-nav">
-          <!-- LINKS -->
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Build Your Pizza!</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/order/orders.html">Orders</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/ingredient/ingredients.html">Ingredients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/app/size/sizes.html">Sizes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Order Detail -->
 
@@ -111,13 +89,14 @@
             </td>
           </tr>
           <tr class="table-active">
-            <th id="total" class="text-right" colspan="3">Total: ${{total_price}}</th>
+            <th id="total" class="text-right" colspan="3">
+              Total: ${{total_price}}
+            </th>
           </tr>
         </tbody>
       </table>
     </template>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -140,5 +119,6 @@
     ></script>
 
     <script src="/js/order/order-detail.js"></script>
+    <script src="/js/templates/header.js"></script>
   </body>
 </html>
